@@ -45,33 +45,49 @@ export default function LoginPage({ setIsLogin }) {
                                     <div className="field">
                                         <label>Email</label>
                                         <div className="ui left icon input">
-                                            <input type="email"
+                                            <input 
+                                                type="email"
                                                 name="email" id="login-email"
                                                 placeholder="example@email.com"
                                                 required value={user.email}
-                                                onChange={onChangeInput} />
-                                            <i className="at icon"></i>
+                                                onChange={onChangeInput} 
+                                            />
+                                                <i className="at icon"></i>
                                         </div>
                                     </div>
+
                                     <div className="field">
                                         <label>Password</label>
                                         <div className="ui left icon input">
-                                            <input type="password" name="password" id="login-password"
-                                                placeholder="Password" required value={user.password}
+                                            <input 
+                                                type="password" 
+                                                name="password" 
+                                                id="login-password"
+                                                placeholder="Password" 
+                                                required 
+                                                value={user.password}
                                                 autoComplete="true"
-                                                onChange={onChangeInput} />
-                                            <i className="lock icon"></i>
+                                                onChange={onChangeInput} 
+                                            />
+                                                <i className="lock icon"></i>
                                         </div>
                                     </div>
-                                    <button type="submit" className="ui submit button" style={{ backgroundColor: "#603", color: "whitesmoke" }}>
+
+                                    <button 
+                                        type="submit" 
+                                        className="ui submit button"
+                                        style={{ backgroundColor: "#603", color: "whitesmoke" }}
+                                        >
                                         Login
                                     </button>
+
                                 </div>
                             </form>
                         </div>
                         <div className="middle aligned column">
                             <div className="ui big button" style={{ backgroundColor: "#603" }}>
-                                <Link to={routes.register} style={{ color: "whitesmoke", textDecoration: "none" }} rol="button">
+                                <Link to={routes.register} 
+                                    style={{ color: "whitesmoke", textDecoration: "none" }} rol="button">
                                     <i className="signup icon"></i>
                                     Register
                                 </Link>
@@ -84,6 +100,7 @@ export default function LoginPage({ setIsLogin }) {
                     </div>
                 </div>
             </Container>
+
             <Container>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
@@ -91,13 +108,15 @@ export default function LoginPage({ setIsLogin }) {
                     </Col>
                 </Row>
             </Container>
+
             <Container>
                 <Row className="justify-content-md-end">
                     <Col md="auto">
                         <img
                             src="/img/CKflor.png"
                             alt="img logo"
-                            style={{ width: "50%", paddingTop: "15px" }} />
+                            style={{ width: "50%", paddingTop: "15px" }}
+                        />
                     </Col>
                 </Row>
             </Container>
