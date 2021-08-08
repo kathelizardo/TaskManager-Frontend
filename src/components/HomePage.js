@@ -19,9 +19,7 @@ export default function HomePage() {
                         Manage your time, improve your proactivity!
                     </Col>
                 </Row>
-            </Container>
-            
-
+            </Container>          
         </>
     )
 }

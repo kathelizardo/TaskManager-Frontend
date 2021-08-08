@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
-// import { Container, Row, Form, Group, Label } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 
 export default function NewTask() {
@@ -38,14 +38,15 @@ export default function NewTask() {
                     headers: { Authorization: token }
                 })
 
-                return history.push('/')
+                return history.push('/all-tasks')
             }
         } catch (err) {
-            window.location.href = "/";
+            window.location.href = "/all-tasks"
         }
     }
 
     return (
+        <Container>
         <div className="col-md-6 offset-md-3" style={{ paddingTop: "30px" }}>
             <div className="card card-body cardN">
                 <div className="Title">
@@ -99,7 +100,9 @@ export default function NewTask() {
 
                     <form onSubmit={createTask}>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="submit" className="ui button" style={{ color: "#603", marginTop: "30px" }}>
+                            <button type="submit" 
+                                    className="ui button" 
+                                    style={{ color: "#603", marginTop: "30px" }}>
                                 <i className="save icon"></i> Save
                             </button>
                         </div>
@@ -107,6 +110,7 @@ export default function NewTask() {
                 </div>
             </div>
         </div>
+        </Container>
 
     )
 }

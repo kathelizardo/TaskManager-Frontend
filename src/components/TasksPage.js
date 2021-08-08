@@ -10,6 +10,7 @@ export default function TasksPage({setIsLogin}) {
         <Router>
             <Header setIsLogin={setIsLogin} />
                 <Route path="/" exact component={AllTasks}  />
+                <Route path="/all-tasks" exact component={AllTasks}  />
                 <Route path="/tasks" exact component={NewTask}  />
                 <Route path="/tasks/:id" exact component={EditTask} />
         </Router>

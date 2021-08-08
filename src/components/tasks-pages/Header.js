@@ -28,7 +28,7 @@ function Header({ setIsLogin }) {
                         </Link>
                     </Col>
                     <Col sm={2}>
-                        <Link to="/" style={{ color: "#603", textDecoration: "none" }}>
+                        <Link to="/all-tasks" style={{ color: "#603", textDecoration: "none" }}>
                             <i className="clipboard list icon"></i> List All Tasks
                         </Link>
                     </Col>

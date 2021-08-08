@@ -100,7 +100,7 @@ export default function EditTask({ match }) {
                             </div>
                         </div> */}
                         <div className="mb-3">
-                            <label for="exampleFormControlInput1" className="form-label">Status</label>
+                            <label  className="form-label">Status</label>
                             <select name="status"
                                 className="form-select form-select-sm"
                                 aria-label=".form-select-sm example"
