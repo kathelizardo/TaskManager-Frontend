@@ -13,9 +13,7 @@ export default function Navigation() {
                 <Nav.Link as={NavLink} to={routes.about}>
                    About Us
                 </Nav.Link>
-                {/* <Nav.Link as={NavLink} to={routes.tasks}>
-                   Tasks
-                </Nav.Link> */}
+               {/* Admin debe quedar oculto si no se ha iniciado sesión */}
                 <NavDropdown title="Admin">
                     <NavDropdown.Item as={NavLink} to={routes.admin.users}> All Users</NavDropdown.Item>
                 </NavDropdown>      
