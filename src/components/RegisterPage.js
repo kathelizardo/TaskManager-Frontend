@@ -3,8 +3,6 @@ import axios from 'axios'
 import { Container, Col, Row } from "react-bootstrap"
 import routes from '../helpers/routes'
 import { Link } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 
 export default function RegisterPage() {
     const [user, setUser] = useState({ name: '', email: '', password: '' })
@@ -22,16 +20,17 @@ export default function RegisterPage() {
             const res = await axios.post('http://localhost:4000/api/users', {
                 name: user.name,
                 email: user.email,
-                password: user.password
+                password: user.password,
             })
             setUser({ name: '', email: '', password: '' })
             setErr(res.data.msg)
-            notify()
+         
         } catch (err) {
             err.response.data.msg && setErr(err.response.data.msg)
         }
+        
     }
-    const notify = () => toast.info({ err }, { position: toast.POSITION.TOP_CENTER })
+   
     return (
         <>
             <Container>
