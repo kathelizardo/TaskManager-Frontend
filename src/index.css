@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Task Manager - CSS */
+.welcome{
+  font-family: 'Kalam', cursive;
+  color: #603;
+  padding: 40px 0px 40px 0px;
+}
+
+.taskI{
+  color: #603;
+  padding: 10px 0px 20px 0px;
+  font-size: 20px;
+}
