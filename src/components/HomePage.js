@@ -11,7 +11,7 @@ export default function HomePage() {
                 <img
                     src="/img/homepage.svg"
                     alt="img homepage"
-                    style={{ width: "30%" }}
+                    style={{ width: "40%" }}
                 />
             </Container>
             <Container>
@@ -23,9 +23,9 @@ export default function HomePage() {
                 </Row>
                 <Row className="justify-content-md-center taskI">
                     <Col md="auto">
-                        <Button variant="outline-dark">
+                        <Button variant="outline-light">
                             <Link to={routes.loginP}
-                                style={{ color: "#271124", textDecoration: "none" }}
+                                style={{ color: "#603", textDecoration: "none" }}
                                 rol="button">
                                 Start Task Manager
                             </Link>

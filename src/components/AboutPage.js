@@ -5,33 +5,59 @@ export default function AboutPage() {
     return (
         <>
             <Container className="mt-5 text-center">
-
                 <h1 className="welcome2">Hi there! do you want to know a little about us?</h1>
-
             </Container>
-
-            <Container>
-                <Row className="justify-content-md-center taskI">
-                    <Col xs={6} md={4}>
+            <Container className="mt-5 text-center">
+                <img
+                    src="/img/CKlogo.png"
+                    alt="img logo"
+                    style={{ width: "40%" }} />
+            </Container>
+            <Container className="mt-5 text-center">
+                <Row className="justify-content-md-center">
+                    <Col xs={8} md="auto">
                         <img
-                            className="ui medium circular image" 
+                            className="ui medium circular image"
                             src="/img/consuelo.png"
                             alt="img consuelo"
-                            style={{ width: "60%" }}
+                            style={{ width: "100%", padding: "20px" }}
                         />
-                        <p className="text-center">Consuelo Ascanio</p>
+                        <p className="text-center nome">Consuelo Ascanio</p>
+                        <div id="six">
+                            <div class="row redes">
+                                <div class="redes-container">
+                                    <ul>
+                                        <li><a href="https://www.linkedin.com/in/consueloascanio/" class="linkedin" target="_blank" rel="noopener"><i class="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/cascanio" class="github" target="_blank" rel="noopener"><i class="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/consuelo.ascanio/" class="instagram" target="_blank" rel="noopener"><i class="instagram icon"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </Col>
-
-                    <Col xs={6} md={4}>
+                    <Col xs={8} md="auto">
                         <img
+                            className="ui medium circular image"
                             src="/img/kathe.png"
                             alt="img kathe"
-                            style={{ width: "60%" }}
+                            style={{ width: "100%", padding: "20px" }}
                         />
-                        <p className="text-center">Katherine Lizardo</p>
+                        <p className="text-center nome">Katherine Lizardo</p>
+                        <div id="six">
+                            <div class="row redes">
+                                <div class="redes-container">
+                                    <ul>
+                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noopener"><i class="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/kathelizardo" class="github" target="_blank" rel="noopener"><i class="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/kathelizardo/" class="instagram" target="_blank" rel="noopener"><i class="instagram icon"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </Col>
-
                 </Row>
+            </Container>
+            <Container>
             </Container>
         </>
     )
