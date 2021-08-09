@@ -44,10 +44,30 @@ export default function UsersPage() {
                 <table className="ui selectable celled table">
                     <thead>
                         <tr className="center aligned">
-                            <th style={{ backgroundColor: "#603", color: "rgb(235, 171, 203)" }}>ID</th>
-                            <th style={{ backgroundColor: "#603", color: "rgb(235, 171, 203)" }}>Name</th>
-                            <th style={{ backgroundColor: "#603", color: "rgb(235, 171, 203)" }}>Email</th>
-                            <th style={{ backgroundColor: "#603", color: "rgb(235, 171, 203)" }}>Actions</th>
+                            <th style={{
+                                backgroundColor: "#603", 
+                                color: "rgb(235, 171, 203)"
+                                }}>
+                                    ID
+                            </th>
+                            <th style={{
+                                backgroundColor: "#603", 
+                                color: "rgb(235, 171, 203)"
+                                }}>
+                                    Name
+                            </th>
+                            <th style={{
+                                backgroundColor: "#603", 
+                                color: "rgb(235, 171, 203)"
+                                }}>
+                                    Email
+                            </th>
+                            <th style={{
+                                backgroundColor: "#603", 
+                                color: "rgb(235, 171, 203)"
+                                }}>
+                                    Actions
+                            </th>
                         </tr>
                     </thead>
                     <tbody>

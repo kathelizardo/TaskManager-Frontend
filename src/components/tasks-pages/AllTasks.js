@@ -61,11 +61,17 @@ export default function AllTasks() {
                                 <div className="card cardT" >
                                     <div className="content">
                                         <div className="ui top left attached label"
-                                            style={{ backgroundColor: "#603", color: "whitesmoke" }}>
+                                            style={{ 
+                                                backgroundColor: "#603", 
+                                                color: "whitesmoke" 
+                                            }}>
                                             {task.name}
                                         </div>
                                         <div className="ui top right attached label"
-                                            style={{ backgroundColor: "#603", color: "whitesmoke" }}>
+                                            style={{ 
+                                                backgroundColor: "#603", 
+                                                color: "whitesmoke" 
+                                            }}>
                                             {task.status}
                                         </div>
                                         <div className="card-body">
@@ -80,7 +86,10 @@ export default function AllTasks() {
                                             <p className="descrip">{format(task.date)}</p>
                                             <div className="extra content">
                                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <Link className="ui icon button" style={{ color: "#603" }} to={"tasks/" + task._id}>
+                                                    <Link 
+                                                        className="ui icon button" 
+                                                        style={{ color: "#603" }} 
+                                                        to={"tasks/" + task._id}>
                                                         <i className="edit icon"></i>
                                                     </Link>
                                                     <Button variant="danger" onClick={() => handleShow()}>
@@ -89,10 +98,13 @@ export default function AllTasks() {
                                                     <Modal show={show} onHide={() => handleClose()}>
                                                         <Modal.Header closeButton>
                                                             <Modal.Title className="descrip">
-                                                            <i className="exclamation triangle icon"></i> Deleting Task
+                                                                <i className="exclamation triangle icon"></i>
+                                                                Deleting Task
                                                             </Modal.Title>
                                                         </Modal.Header>
-                                                        <Modal.Body className="welcome2">Are you sure to delete this task?</Modal.Body>
+                                                        <Modal.Body className="welcome2">
+                                                            Are you sure to delete this task?
+                                                        </Modal.Body>
                                                         <Modal.Footer>
                                                             <Button variant="secondary" onClick={() => handleClose()}>
                                                                 Cancel
