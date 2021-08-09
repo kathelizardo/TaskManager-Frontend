@@ -11,8 +11,10 @@ export default function HomePage() {
                 <img
                     src="/img/CKlogo.png"
                     alt="img logo"
-                    style={{ width: "50%" }} />
+                    style={{ width: "50%" }}
+                />
             </Container>
+            
             <Container>
                 <Row className="justify-content-md-center taskI">
                     <Col  md="auto">

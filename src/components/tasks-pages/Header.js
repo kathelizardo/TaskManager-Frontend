@@ -15,27 +15,31 @@ function Header({ setIsLogin }) {
             <Container >
                 <Row className="justify-content-md-end">
                     <Col sm={12}>
-                    <img
-                    src="/img/tklogo.png"
-                    alt="img logo"
-                    style={{ width: "12%", paddingTop:"15px"}} />
+                        <img
+                            src="/img/tklogo.png"
+                            alt="img logo"
+                            style={{ width: "12%", paddingTop:"15px"}}
+                        />
                     </Col>
                 </Row>
                 <Row className="justify-content-md-end">
                     <Col sm={1}>
-                        <Link to={routes.tasks} style={{ color: "#603", textDecoration: "none" }}>
+                        <Link to={routes.tasks} 
+                            style={{ color: "#603", textDecoration: "none" }}>
                             <i className="plus icon"></i> New Task
                         </Link>
                     </Col>
                     <Col sm={2}>
-                        <Link to="/all-tasks" style={{ color: "#603", textDecoration: "none" }}>
+                        <Link to="/all-tasks" 
+                            style={{ color: "#603", textDecoration: "none" }}>
                             <i className="clipboard list icon"></i> List All Tasks
                         </Link>
                     </Col>
                     <Col sm={1}>
                         <p onClick={logoutSubmit}>
-                            <Link to="/" style={{ color: "#603", textDecoration: "none" }}>
-                            <i className="sign out alternate icon"></i> Logout
+                            <Link to="/" 
+                                style={{ color: "#603", textDecoration: "none" }}>
+                                <i className="sign out alternate icon"></i> Logout
                             </Link>
                         </p>
                     </Col>
