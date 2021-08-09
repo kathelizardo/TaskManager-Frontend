@@ -8,8 +8,8 @@ export default function Navigation() {
         <Navbar 
             collapseOnSelect 
             expand="lg" 
-            variant="dark" 
-            style={{backgroundColor:"#603", padding:"20px"}}
+            variant="light" 
+            style={{padding:"20px"}}
         >
         <Navbar.Brand as={NavLink} to={routes.home}>CK Programming </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
@@ -25,9 +25,9 @@ export default function Navigation() {
                     </NavDropdown.Item>
                 </NavDropdown>      
             </Nav>
-            <Nav>
+            {/* <Nav>
                 <Nav.Link as={NavLink} to={routes.loginP}>Task Manager</Nav.Link>
-            </Nav> 
+            </Nav>  */}
         </Navbar.Collapse>
     </Navbar>
     )

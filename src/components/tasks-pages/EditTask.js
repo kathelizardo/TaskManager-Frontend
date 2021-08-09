@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 
 export default function EditTask({ match }) {
     const [task, setTask] = useState({
@@ -21,7 +22,6 @@ export default function EditTask({ match }) {
                 setTask({
                     title: res.data.title,
                     description: res.data.description,
-                    // date: new Date(res.data.date).toLocaleDateString(),
                     status: res.data.status,
                     id: res.data._id
                 })
@@ -49,17 +49,16 @@ export default function EditTask({ match }) {
                 await axios.put(`/api/tasks/${id}`, newTask, {
                     headers: { Authorization: token }
                 })
-
                 return history.push('/')
             }
         } catch (err) {
             window.location.href = "/"
         }
     }
-
     return (
         <>
-            <div className="col-md-6 offset-md-3" style={{ paddingTop: "30px" }}>
+        <Container>
+            <div className="col-md-6 offset-md-3" style={{ padding: "30px" }}>
                 <div className="card card-body cardN">
                     <div className="Title">
                         <h4><i className="tasks icon"></i> Edit Task</h4>
@@ -91,16 +90,6 @@ export default function EditTask({ match }) {
                                 required>
                             </textarea>
                         </div>
-                        {/* <div className="mb-3">
-                            <label className="form-label">
-                                <i className="calendar alternate outline icon"></i>   Limit Date
-                            </label>
-                            <div>
-                                <input type="date" id="date"
-                                        name="date"
-                                        onChange={onChangeInput} />
-                            </div>
-                        </div> */}
                         <div className="mb-3">
                             <label  className="form-label">Status</label>
                             <select 
@@ -130,6 +119,7 @@ export default function EditTask({ match }) {
                     </div>
                 </div>
             </div>
+        </Container>
         </>
     )
 }

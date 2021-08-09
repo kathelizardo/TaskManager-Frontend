@@ -24,6 +24,7 @@ export default function RegisterPage() {
             })
             setUser({ name: '', email: '', password: '' })
             setErr(res.data.msg)
+            window.location.href = "/login"
          
         } catch (err) {
             err.response.data.msg && setErr(err.response.data.msg)
@@ -37,7 +38,7 @@ export default function RegisterPage() {
                 <Container>
                     <Row className="mt-5 justify-content-md-center">
                         <Col md="auto">
-                            <p className="welcome2">{err}</p>
+                            <p className="msj">{err}</p>
                         </Col>
                     </Row>
                 </Container>
@@ -123,18 +124,6 @@ export default function RegisterPage() {
                         </div>
                     </div>
                 </div>
-            </Container>
-
-            <Container>
-                <Row className="justify-content-md-end">
-                    <Col md="auto">
-                        <img
-                            src="/img/CKflor.png"
-                            alt="img logo"
-                            style={{ width: "50%", paddingTop: "15px" }} 
-                        />
-                    </Col>
-                </Row>
             </Container>
         </>
     )

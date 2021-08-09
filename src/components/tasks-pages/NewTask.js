@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 import { Container } from "react-bootstrap"
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
-
+toast.configure()
 export default function NewTask() {
     const [task, setTask] = useState({
         title: '',
@@ -17,9 +19,6 @@ export default function NewTask() {
         const { name, value } = e.target;
         setTask({ ...task, [name]: value })
     }
-
-
-
 
     const createTask = async e => {
         e.preventDefault()
@@ -37,17 +36,20 @@ export default function NewTask() {
                 await axios.post('/api/tasks', newTask, {
                     headers: { Authorization: token }
                 })
-
+                notify()
                 return history.push('/all-tasks')
             }
         } catch (err) {
             window.location.href = "/all-tasks"
         }
+
     }
+
+    const notify = () => toast("Task Saved", { position: toast.POSITION.TOP_CENTER })
 
     return (
         <Container>
-        <div className="col-md-6 offset-md-3" style={{ paddingTop: "30px" }}>
+        <div className="col-md-6 offset-md-3" style={{ padding: "50px" }}>
             <div className="card card-body cardN">
                 <div className="Title">
                     <h4><i className="tasks icon"></i> New Task</h4>
@@ -80,7 +82,7 @@ export default function NewTask() {
 
                     <div className="mb-3">
                         <label className="form-label">
-                            <i className="calendar alternate outline icon"></i>   Date
+                            <i className="calendar alternate outline icon"></i>   Date (Limit)
                         </label>
                         <div>
                             <input
@@ -99,7 +101,7 @@ export default function NewTask() {
                             className="form-select form-select-sm"
                             aria-label=".form-select-sm example"
                             onChange={onChangeInput}>
-                            <option defaultValue>Open this select menu</option>
+                            <option defaultValue>Select the status here</option>
                             <option name="status" value="Pending">Pending</option>
                             <option name="status" value="In Progress">In Progres</option>
                             <option name="status" value="Complete">Complete</option>

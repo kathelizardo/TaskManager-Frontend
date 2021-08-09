@@ -9,35 +9,35 @@ function Header({ setIsLogin }) {
         localStorage.clear()
         setIsLogin(false)
     }
-    
+
     return (
         <>
             <Container >
                 <Row className="justify-content-md-end">
                     <Col sm={12}>
                         <img
-                            src="/img/tklogo.png"
+                            src="/img/header.svg"
                             alt="img logo"
-                            style={{ width: "12%", paddingTop:"15px"}}
+                            style={{ width: "20%", paddingTop: "15px" }}
                         />
                     </Col>
                 </Row>
-                <Row className="justify-content-md-end">
-                    <Col sm={1}>
-                        <Link to={routes.tasks} 
+                <Row className="justify-content-md-end tasklink" xs="auto">
+                    <Col>
+                        <Link to={routes.tasks}
                             style={{ color: "#603", textDecoration: "none" }}>
                             <i className="plus icon"></i> New Task
                         </Link>
                     </Col>
-                    <Col sm={2}>
-                        <Link to="/all-tasks" 
+                    <Col >
+                        <Link to="/all-tasks"
                             style={{ color: "#603", textDecoration: "none" }}>
                             <i className="clipboard list icon"></i> List All Tasks
                         </Link>
                     </Col>
-                    <Col sm={1}>
+                    <Col>
                         <p onClick={logoutSubmit}>
-                            <Link to="/" 
+                            <Link to="/"
                                 style={{ color: "#603", textDecoration: "none" }}>
                                 <i className="sign out alternate icon"></i> Logout
                             </Link>

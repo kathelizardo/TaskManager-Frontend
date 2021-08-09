@@ -37,8 +37,8 @@ export default function LoginPage({ setIsLogin }) {
                 <h1 className="welcome2">First ... login or register:</h1>
             </Container>
             <Container className="mt-5">
-                <div className="ui placeholder segment">
-                    <div className="ui two column very relaxed stackable grid">
+                <Container className="ui placeholder segment">
+                    <div className="ui two column grid">
                         <div className="column">
                             <form onSubmit={loginSubmit} >
                                 <div className="ui form">
@@ -78,6 +78,7 @@ export default function LoginPage({ setIsLogin }) {
                                         className="ui submit button"
                                         style={{ backgroundColor: "#603", color: "whitesmoke" }}
                                         >
+                                        <i className="sign-in icon"></i>
                                         Login
                                     </button>
 
@@ -85,37 +86,38 @@ export default function LoginPage({ setIsLogin }) {
                             </form>
                         </div>
                         <div className="middle aligned column">
-                            <div className="ui big button" style={{ backgroundColor: "#603" }}>
+                            <div className="ui medium button" style={{ backgroundColor: "#603" }}>
                                 <Link to={routes.register} 
                                     style={{ color: "whitesmoke", textDecoration: "none" }} rol="button">
-                                    <i className="signup icon"></i>
-                                    Register
+                                    <i className="user plus icon"></i>
+                                       Register
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="ui vertical divider">
+                    {/* <div className="ui vertical divider">
                         <i className="angle left icon geral"></i>
                         <i className="angle right icon geral"></i>
-                    </div>
-                </div>
+                    </div> */}
+
+                </Container>
             </Container>
 
             <Container>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <p className="welcome2">{err}</p>
+                        <p className="msj">{err}</p>
                     </Col>
                 </Row>
             </Container>
 
             <Container>
                 <Row className="justify-content-md-end">
-                    <Col md="auto">
+                    <Col sm={4}>
                         <img
-                            src="/img/CKflor.png"
+                            src="/img/loginpage.svg"
                             alt="img logo"
-                            style={{ width: "50%", paddingTop: "15px" }}
+                            style={{ width: "80%", paddingTop: "15px" }}
                         />
                     </Col>
                 </Row>

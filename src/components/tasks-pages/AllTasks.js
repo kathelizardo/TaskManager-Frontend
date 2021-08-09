@@ -51,7 +51,7 @@ export default function AllTasks() {
             <Container>
                 <div className="TopTasks">
                     <h4 className="ui horizontal divider header" style={{ color: "#603" }}>
-                        <p className="welcome2">Work hard! You can do it! </p>
+                        <p className="welcome3">Work hard! You can do it! </p>
                     </h4>
                 </div>
                 <div className="ui cards">
@@ -83,7 +83,7 @@ export default function AllTasks() {
                                                 <label>Description:</label> <p className="descrip">{task.description}</p>
                                             </div>
                                             <div className="ui divider"></div>
-                                            <p className="descrip">{format(task.date)}</p>
+                                            <label>Limit Date: </label><p className="descrip">{format(task.date)}</p>
                                             <div className="extra content">
                                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                                                     <Link 

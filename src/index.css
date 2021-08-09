@@ -1,9 +1,15 @@
 body{
-  background-color: #EFEFBB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   ;
+  /* background-image: url("./img/fondo2.jpg");
+  background-position: center center ;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -37,8 +43,8 @@ code {
 }
 
 @keyframes slidein {
-    0% { margin-left:-500px; }
-    20% { margin-left:-500px; }
+    0% { margin-left:-300px; }
+    20% { margin-left:-300px; }
     35% { margin-left:0px; }
     100% { margin-left:0px; }
 }
@@ -46,25 +52,34 @@ code {
 @keyframes reveal {
     0% {opacity:0;width:0px;}
     20% {opacity:1;width:0px;}
-    30% {width:400px;}
+    30% {width:100%;}
     80% {opacity:1;}
-    100% {opacity:0;width:400px;}
+    100% {opacity:0;width:100%;}
 }
-
 
 
 /* Task Manager - CSS */
 .welcome{
-  font-family: 'Kalam', cursive;
-  color: #603;
+  font-family: 'Georama', sans-serif;
+  color: #271124;
+  font-size: 3.2rem;
   padding: 40px 0px 40px 0px;
 }
 .welcome2{
-  font-family: 'Kalam', cursive;
+  font-family: 'Georama', sans-serif;
   color: #603;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
-
+.welcome3{
+  font-family: 'Georama', sans-serif;
+  color: #603;
+  font-size: 1rem;
+}
+.msj{
+  font-family: 'Georama', sans-serif;
+  color: #603;
+  font-size: 1.1vw;
+}
 .TaskP{
   padding-left: 120px;
   color: #603;
@@ -73,7 +88,8 @@ code {
 .taskI{
   color: #603;
   padding: 10px 0px 20px 0px;
-  font-size: 20px;
+  font-size: 1.5rem;
+  font-family: 'Georama', sans-serif;
 }
 
 .TopTasks{
@@ -84,7 +100,10 @@ code {
 Link{
   text-decoration: none;
 }
-
+.tasklink{
+  font-size: 1rem;
+  padding-left: 1.5rem;
+}
 .geral{
   color: #603;
   font-size: 20px;
@@ -101,9 +120,9 @@ Link{
 
 .cardN {
   background: #603; 
-  background: -webkit-linear-gradient(to right, #4c044e, #603); 
-  background: linear-gradient(to right, #4c044e, #603);
-  padding: 20px;      
+  background: -webkit-linear-gradient(to right, #550c39, #603); 
+  background: linear-gradient(to right, #550c39, #603);
+  padding: 10px;      
 }
 
 th{
@@ -116,8 +135,6 @@ th{
   color: #917984;
   padding: 10px 0px 10px 30px;
 }
-
-
 
 .button{
   padding-top: 20px;
@@ -140,14 +157,14 @@ label{
   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
   transition: all 0.3s ease-out;
   text-decoration: none;
-  background: #d3becc;
+  background: #D3CCE3;
 }
 
-/* .cardT:hover {
+.cardT:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
     0 24px 46px var(--box-shadow-color);
-} */
+}
 
 
 .descrip{
