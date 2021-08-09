@@ -4,12 +4,34 @@ body{
   background: linear-gradient(to right, #E9E4F0, #D3CCE3);
 }
 
+/* NavBar */
 
 /*Home Page*/
+.welcome{
+  font-family: 'Georama', sans-serif;
+  background: linear-gradient(to right, #D3CCE3 0%, #603 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  padding: 40px 0px 40px 0px;
+}
+
+.homeimg{
+  width: fit-content;
+}
+
 .hometitle {
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
+}
+
+.slide{
+  color: #603;
+  padding: 10px 0px 20px 0px;
+  font-size: 2.2rem;
+  font-family: 'Georama', sans-serif;
 }
 
 .hometitle:first-of-type {   
@@ -48,17 +70,90 @@ body{
     100% {opacity:0;width:100%;}
 }
 
+.botonTask{
+  color: #603;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 20px;
+ }
+ .boton{
+   padding-top: 60px;
+ }
+ .boton:hover {
+   transform: translateY(-5px) scale(1.005) translateZ(0);
+   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);}
+
+
+/*Home Page Responsive */
+@media screen and (max-device-width : 768px) { 
+  .welcome{
+    font-size: 2.5rem;
+    padding: 100px 0px 40px 0px;
+  }
+
+  .homeimg{
+    width:15rem;
+  }
+
+  .slide{
+    color: #603;
+    padding: 10px 0px 20px 32px;
+    font-size:1rem;
+    font-family: 'Georama', sans-serif;
+  }
+
+  .hometitle:first-of-type {   
+    animation: showup 20s infinite;
+  }
+  
+  .hometitle:last-of-type {
+    width:0px;
+    animation: reveal 10s infinite;
+  }
+  
+  .hometitle:last-of-type span {
+    margin-left:-45px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-30px; }
+      20% { margin-left:-30px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:100%;}
+      80% {opacity:1;}
+      100% {opacity:0;width:100%;}
+  }
+  .botonTask{
+    color: #603;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+   }
+   .boton{
+     padding: 40px 0px 40px 80px;
+   }
+  
+}
+
+
 
 /* Task Manager - CSS */
-.welcome{
-  font-family: 'Georama', sans-serif;
-  background: linear-gradient(to right, #D3CCE3 0%, #603 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 5rem;
-  padding: 40px 0px 40px 0px;
-}
+
 .welcome2{
   font-family: 'Georama', sans-serif;
   color: #603;

@@ -15,7 +15,7 @@ export default function AboutPage() {
             </Container>
             <Container className="mt-5 text-center">
                 <Row className="justify-content-md-center">
-                    <Col xs={8} md="auto">
+                    <Col xs={8} md="auto" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/consuelo.png"
@@ -35,7 +35,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={8} md="auto">
+                    <Col xs={4} md="auto" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/kathe.png"

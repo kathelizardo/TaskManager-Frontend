@@ -11,21 +11,21 @@ export default function HomePage() {
                 <img
                     src="/img/homepage.svg"
                     alt="img homepage"
-                    style={{ width: "40%" }}
+                    className="homeimg"
                 />
             </Container>
             <Container>
-                <Row className="justify-content-md-center taskI">
+                <Row className="justify-content-md-center slide">
                     <Col md="auto">
                         <div className="hometitle">Manage your time, improve your proactivity!</div>
                         <span ></span>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center taskI">
+                <Row className="justify-content-md-center boton">
                     <Col md="auto">
-                        <Button variant="outline-light">
+                        <Button className="ui violet basic button">
                             <Link to={routes.loginP}
-                                style={{ color: "#603", textDecoration: "none" }}
+                                className="botonTask"
                                 rol="button">
                                 Start Task Manager
                             </Link>
