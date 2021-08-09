@@ -95,7 +95,7 @@ export default function RegisterPage() {
                                                 className="form-control" />
                                         </div>
                                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button button type="submit" className="ui button" style={{ color: "#603", marginTop: "30px" }}>
+                                            <button type="submit" className="ui button" style={{ color: "#603", marginTop: "30px" }}>
                                                 <i className="save icon"></i> Save User
                                             </button>
                                         </div>

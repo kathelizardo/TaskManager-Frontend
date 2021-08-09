@@ -16,7 +16,8 @@ export default function HomePage() {
             <Container>
                 <Row className="justify-content-md-center taskI">
                     <Col  md="auto">
-                        Manage your time, improve your proactivity!
+                    <div className="hometitle">Manage your time, improve your proactivity!</div>
+                    <span ></span>
                     </Col>
                 </Row>
             </Container>          
