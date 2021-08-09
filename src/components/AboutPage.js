@@ -11,11 +11,12 @@ export default function AboutPage() {
                 <img
                     src="/img/CKlogo.png"
                     alt="img logo"
-                    style={{ width: "40%" }} />
+                    className="logo"
+                    />
             </Container>
-            <Container className="mt-5 text-center">
+            <Container className="mt-5 text-center about">
                 <Row className="justify-content-md-center">
-                    <Col xs={8} md="auto" style={{width:"25%"}}>
+                    <Col xs={8} md="auto" className="column" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/consuelo.png"
@@ -35,7 +36,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md="auto" style={{width:"25%"}}>
+                    <Col xs={4} md="auto" className="column" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/kathe.png"
@@ -44,7 +45,7 @@ export default function AboutPage() {
                         />
                         <p className="text-center nome">Katherine Lizardo</p>
                         <div id="six">
-                            <div class="row redes">
+                            <div class="text-center row redes">
                                 <div class="redes-container">
                                     <ul>
                                         <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noopener"><i class="linkedin icon"></i></a></li>

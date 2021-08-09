@@ -57,25 +57,25 @@ export default function UsersPage() {
                                 <tr className="center aligned">
                                     <th style={{
                                         backgroundColor: "#603",
-                                        color: "rgb(235, 171, 203)"
+                                        color: "#D3CCE3"
                                     }}>
                                         ID
                                     </th>
                                     <th style={{
                                         backgroundColor: "#603",
-                                        color: "rgb(235, 171, 203)"
+                                        color: "#D3CCE3"
                                     }}>
                                         Name
                                     </th>
                                     <th style={{
                                         backgroundColor: "#603",
-                                        color: "rgb(235, 171, 203)"
+                                        color: "#D3CCE3"
                                     }}>
                                         Email
                                     </th>
                                     <th style={{
                                         backgroundColor: "#603",
-                                        color: "rgb(235, 171, 203)"
+                                        color: "#D3CCE3"
                                     }}>
                                         Actions
                                     </th>
@@ -89,10 +89,6 @@ export default function UsersPage() {
                                             <td>{item.name}</td>
                                             <td>{item.email}</td>
                                             <td>
-                                                {/* <button type="submit" onClick={() =>
-                                            deleteUser(item._id)} className="ui icon red button">
-                                            <i className="trash alternate outline icon"></i>
-                                        </button> */}
                                                 <Button variant="danger" onClick={() => handleShow()}>
                                                     <i className="trash alternate outline icon"></i>
                                                 </Button>
@@ -104,7 +100,7 @@ export default function UsersPage() {
                                                         </Modal.Title>
                                                     </Modal.Header>
                                                     <Modal.Body className="welcome2">
-                                                        Are you sure to delete {item.name}?
+                                                        Are you sure to delete "{item.name}"?
                                                     </Modal.Body>
                                                     <Modal.Footer>
                                                         <Button variant="secondary" onClick={() => handleClose()}>

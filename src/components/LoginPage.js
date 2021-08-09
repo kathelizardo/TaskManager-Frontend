@@ -86,19 +86,19 @@ export default function LoginPage({ setIsLogin }) {
                             </form>
                         </div>
                         <div className="middle aligned column">
-                            <div className="ui medium button" style={{ backgroundColor: "#603" }}>
+                            <div className="ui small button" style={{ backgroundColor: "#603" }}>
                                 <Link to={routes.register} 
-                                    style={{ color: "whitesmoke", textDecoration: "none" }} rol="button">
+                                    style={{ color: "whitesmoke", textDecoration: "none" }}>
                                     <i className="user plus icon"></i>
                                        Register
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    {/* <div className="ui vertical divider">
+                    <div className="ui vertical divider">
                         <i className="angle left icon geral"></i>
                         <i className="angle right icon geral"></i>
-                    </div> */}
+                    </div>
 
                 </Container>
             </Container>
@@ -106,7 +106,7 @@ export default function LoginPage({ setIsLogin }) {
             <Container>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <p className="msj">{err}</p>
+                        <h3 className="msj">{err}</h3>
                     </Col>
                 </Row>
             </Container>

@@ -18,7 +18,7 @@ body{
 }
 
 .homeimg{
-  width: fit-content;
+  width: 40%;
 }
 
 .hometitle {
@@ -150,15 +150,122 @@ body{
   
 }
 
+/* About Page */
+.logo{
+  width: 20%;
+}
 
-
-/* Task Manager - CSS */
 
 .welcome2{
   font-family: 'Georama', sans-serif;
   color: #603;
   font-size: 1.5rem;
 }
+#six{
+  border-bottom: solid 8px #efefef;
+}
+
+#six .boton3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+#six a {
+  text-decoration: none;
+}
+
+:root {
+  --linkedin:#541058;
+  --github:#541058;
+  --instagram:#541058;
+}
+
+.redes-container{
+  display: flex;
+  height: 100%;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+.redes-container ul li{
+  display: inline-block;
+  margin: 0 5px 0px 5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.redes-container ul li a{
+  display: block;
+  padding: 0px;
+  background-color: #333;
+  color: white;
+  line-height: 30px;
+  font-size: 20px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+  transition: .2s;
+}
+
+.redes-container ul:hover a{
+  filter:blur(2px);
+}
+
+.redes-container ul li a:hover{
+  transform: translate(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+  filter: none;
+}
+
+.redes-container ul li .linkedin:hover{
+  background-color: var(--linkedin);
+}
+
+.redes-container ul li .instagram:hover{
+  background-color: var(--instagram);
+}
+
+.redes-container ul li .github:hover{
+  background-color: var(--github);
+}
+
+/*About Page Responsive */
+@media screen and (max-device-width : 768px) {
+  .logo{
+    width: 45%;
+  }
+  .about{
+    margin-left: 40px ;
+  }
+  .redes-container ul li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .redes-container ul li a{
+    color: white;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .welcome2{
+    font-family: 'Georama', sans-serif;
+    color: #603;
+    font-size: 1rem;
+  }
+ }
+
+ /* Register Page */
+ @media screen and (max-device-width : 768px) {
+
+ }
+
+
+
+
+/* General */
 .welcome3{
   font-family: 'Georama', sans-serif;
   color: #603;
@@ -168,11 +275,6 @@ body{
   font-family: 'Georama', sans-serif;
   color: #603;
   font-size: 1.1vw;
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #603;
 }
 
 .TaskP{
@@ -222,15 +324,10 @@ Link{
   background: #603; 
   background: -webkit-linear-gradient(to right, #550c39, #603); 
   background: linear-gradient(to right, #550c39, #603);
-  padding: 10px;      
+  padding: 10px;     
 }
 
-th{
-  background: #603; 
-  background: -webkit-linear-gradient(to right, #4c044e, #603); 
-  background: linear-gradient(to right, #4c044e, #603);
-  color: #917984;
-}
+
 .Title {
   color: #917984;
   padding: 10px 0px 10px 30px;
@@ -260,12 +357,11 @@ label{
   background: #D3CCE3;
 }
 
-.cardT:hover {
+/* .cardT:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
     0 24px 46px var(--box-shadow-color);
-}
-
+} */
 
 .descrip{
   color: #660033;
@@ -276,96 +372,49 @@ label{
   margin-top: 20px;
 }
 
-
-#six{
-  border-bottom: solid 8px #efefef;
-}
-
-#six .boton3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-}
-
-#six a {
-  text-decoration: none;
-}
-
-:root {
-  --linkedin:#541058;
-  --github:#541058;
-  --instagram:#541058;
-}
-
-.redes-container{
-  display: flex;
-  height: 100%;
-  align-items:center;
-  justify-content:center;
-  margin-bottom: 20px;
-}
-
-.redes-container ul li{
-  display: inline-block;
-  margin: 0 5px;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-}
-
-.redes-container ul li a{
-  display: block;
-  padding: 0 10px;
-  background-color: #333;
-  color: white;
-  line-height: 50px;
-  font-size: 30px;
-  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
-  transition: .2s;
-}
-
-.redes-container ul:hover a{
-  filter:blur(2px);
-}
-
-.redes-container ul li a:hover{
-  transform: translate(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
-  filter: none;
-}
-
-.redes-container ul li .linkedin:hover{
-  background-color: var(--linkedin);
-}
-
-.redes-container ul li .instagram:hover{
-  background-color: var(--instagram);
-}
-
-.redes-container ul li .github:hover{
-  background-color: var(--github);
-}
-
-@media screen and (max-device-width : 768px) { 
-  .redes-container{
-      display: flex;
-      height: 15vh;
-      align-items: center;
-      justify-content: center;
+@media screen and (max-device-width : 768px) {
+  .welcome3{
+    font-size: 1rem;
+  }
+  .msj{
+    padding-left: 20px;
+  }
+    
+  .TaskP{
+     color: #603;
+  }
+  
+  .taskI{
+    padding: 10px 0px 20px 0px;
+    font-size: 1.5rem;
+  }
+  
+  .TopTasks{
+    padding-top: 10px;
+  }
+  
+  Link{
+    text-decoration: none;
   }
 
-  .redes-container ul li{
-      width: 50px;
-      height: 50px;
+  .tasklink{
+    font-size: 1rem;
+    padding-left: 1.5rem;
   }
 
-  #six .boton3 {
-      display: flex;
-      padding-left: 30px;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
+  .geral{
+    color: #603;
+    font-size: 20px;
   }
-
+  
+  
+  
+  .Title {
+    color: #917984;
+    padding: 10px 0px 10px 30px;
+  }
+  
+  
+  
+ 
 }

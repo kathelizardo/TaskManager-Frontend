@@ -12,13 +12,13 @@ export default function Navigation() {
             variant="light"
             style={{ padding: "20px", fontSize: "20px" }}
         >
-            <Navbar.Brand as={NavLink} to={routes.home} style={{ color: "#654ea3", fontSize: "20px", fontFamily:"Georama, sans-serif"}}>
+            <Navbar.Brand as={NavLink} to={routes.home} style={{ color: "#603", fontSize: "20px", fontFamily:"Georama, sans-serif"}}>
                 CK Programming 
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto navlink">
-                    <Nav.Link as={NavLink} to={routes.about} style={{ color: "#654ea3" }}>
+                    <Nav.Link as={NavLink} to={routes.about} style={{ color: "#603" }}>
                         About Us
                     </Nav.Link>
                 </Nav>
