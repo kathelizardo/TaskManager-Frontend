@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Col, Row } from "react-bootstrap"
 import routes from '../../helpers/routes'
+import Count from './Count'
 
 function Header({ setIsLogin }) {
 
@@ -22,6 +23,11 @@ function Header({ setIsLogin }) {
                         />
                     </Col>
                 </Row>
+                <Row className="justify-content-md-end">
+                    <Col sm={12}>
+                        <Count/>
+                    </Col>
+                </Row>
                 <Row className="justify-content-md-end tasklink" xs="auto">
                     <Col>
                         <Link to={routes.tasks}
@@ -30,18 +36,18 @@ function Header({ setIsLogin }) {
                         </Link>
                     </Col>
                     <Col >
-                        <Link to="/all-tasks"
+                        <Link to="/tasks"
                             style={{ color: "#603", textDecoration: "none" }}>
                             <i className="clipboard list icon"></i> List All Tasks
                         </Link>
                     </Col>
                     <Col>
-                        <p onClick={logoutSubmit}>
-                            <Link to="/"
+                        
+                            <Link to={routes.login}
+                                 onClick={logoutSubmit}
                                 style={{ color: "#603", textDecoration: "none" }}>
                                 <i className="sign out alternate icon"></i> Logout
                             </Link>
-                        </p>
                     </Col>
                 </Row>
             </Container>

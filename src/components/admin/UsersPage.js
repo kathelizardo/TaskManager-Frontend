@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Container, Modal, Button } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
 
 export default function UsersPage() {
     const [user, setUser] = useState([])
@@ -31,18 +31,15 @@ export default function UsersPage() {
             .then(function () {
                 console.log('User:', _id)
                 console.log('Deleted!')
-                handleClose()
             })
             .catch(function (error) {
                 console.log(error)
             });
+            getUsers(token)
         window.location.href = '/admin/users'
     }
-    console.log(token)
-    const [show, setShow] = useState(false)
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
-
+    
+    
     return (
         <>
             <Container className="mt-5 ">
@@ -89,28 +86,9 @@ export default function UsersPage() {
                                             <td>{item.name}</td>
                                             <td>{item.email}</td>
                                             <td>
-                                                <Button variant="danger" onClick={() => handleShow()}>
+                                                <Button variant="danger" onClick={() => deleteUser(item._id)}>
                                                     <i className="trash alternate outline icon"></i>
                                                 </Button>
-                                                <Modal show={show} onHide={() => handleClose()}>
-                                                    <Modal.Header closeButton>
-                                                        <Modal.Title className="descrip">
-                                                            <i className="exclamation triangle icon"></i>
-                                                            Deleting User
-                                                        </Modal.Title>
-                                                    </Modal.Header>
-                                                    <Modal.Body className="welcome2">
-                                                        Are you sure to delete "{item.name}"?
-                                                    </Modal.Body>
-                                                    <Modal.Footer>
-                                                        <Button variant="secondary" onClick={() => handleClose()}>
-                                                            Cancel
-                                                        </Button>
-                                                        <Button variant="danger" onClick={() => deleteUser(item._id)}>
-                                                            Yes, delete it!
-                                                        </Button>
-                                                    </Modal.Footer>
-                                                </Modal>
                                             </td>
                                         </tr>)
                                 })}

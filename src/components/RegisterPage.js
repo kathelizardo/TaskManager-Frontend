@@ -24,7 +24,6 @@ export default function RegisterPage() {
             })
             setUser({ name: '', email: '', password: '' })
             setErr(res.data.msg)
-            window.location.href = "/login"
          
         } catch (err) {
             err.response.data.msg && setErr(err.response.data.msg)

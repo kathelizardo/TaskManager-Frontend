@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { format } from 'timeago.js'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import { Container, Modal, Button } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
+import Swal from 'sweetalert2'
 
-
-toast.configure()
 export default function AllTasks() {
     const [tasks, setTasks] = useState([])
     const [token, setToken] = useState('')
@@ -28,23 +25,47 @@ export default function AllTasks() {
     }, [])
 
     const deleteTask = async (id) => {
-        try {
-            if (token) {
-                await axios.delete(`api/tasks/${id}`, {
-                    headers: { Authorization: token }
-                })
-                getTasks(token)
-                handleClose()
-                notify()
-            }
-        } catch (error) {
-        }
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, cancel!',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                try {
+                    if (token) {
+                        axios.delete(`http://localhost:4000/api/tasks/${id}`, {
+                            headers: { Authorization: token }
+                        })
+                        getTasks(token)
+                    }
+                } catch (error) {
+                }
+                new Swal("Task Deleted!", {
+                    icon: "success",
+                });
+            } else if (
+                result.dismiss === Swal.DismissReason.can
+            )
+            {
+                new Swal.fire(
+                  'Cancelled',
+                  'Your task is safe :)',
+                  'error'
+                )
+              }
+        })
     }
 
-    const [show, setShow] = useState(false)
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
-    const notify = () => toast("Task Deleted", { position: toast.POSITION.TOP_CENTER })
+    // const countByStatus = (status) => {
+    //     return {
+    //         total: tasks.filter(task => task.status === status).length,
+    //     };
+    // }
+
 
     return (
         <>
@@ -61,16 +82,16 @@ export default function AllTasks() {
                                 <div className="card cardT" >
                                     <div className="content">
                                         <div className="ui top left attached label"
-                                            style={{ 
-                                                backgroundColor: "#603", 
-                                                color: "whitesmoke" 
+                                            style={{
+                                                backgroundColor: "#603",
+                                                color: "whitesmoke"
                                             }}>
                                             {task.name}
                                         </div>
                                         <div className="ui top right attached label"
-                                            style={{ 
-                                                backgroundColor: "#603", 
-                                                color: "whitesmoke" 
+                                            style={{
+                                                backgroundColor: "#603",
+                                                color: "whitesmoke"
                                             }}>
                                             {task.status}
                                         </div>
@@ -86,34 +107,15 @@ export default function AllTasks() {
                                             <label>Limit Date: </label><p className="descrip">{format(task.date)}</p>
                                             <div className="extra content">
                                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <Link 
-                                                        className="ui icon button" 
-                                                        style={{ color: "#603" }} 
+                                                    <Link
+                                                        className="ui icon button"
+                                                        style={{ color: "#603" }}
                                                         to={"tasks/" + task._id}>
                                                         <i className="edit icon"></i>
                                                     </Link>
-                                                    <Button variant="danger" onClick={() => handleShow()}>
+                                                    <Button variant="danger" onClick={() => deleteTask(task._id)}>
                                                         <i className="trash alternate outline icon"></i>
                                                     </Button>
-                                                    <Modal show={show} onHide={() => handleClose()}>
-                                                        <Modal.Header closeButton>
-                                                            <Modal.Title className="descrip">
-                                                                <i className="exclamation triangle icon"></i>
-                                                                Deleting Task
-                                                            </Modal.Title>
-                                                        </Modal.Header>
-                                                        <Modal.Body className="welcome2">
-                                                            Are you sure to delete this task?
-                                                        </Modal.Body>
-                                                        <Modal.Footer>
-                                                            <Button variant="secondary" onClick={() => handleClose()}>
-                                                                Cancel
-                                                            </Button>
-                                                            <Button variant="danger" onClick={() => deleteTask(task._id)}>
-                                                                Yes, delete it!
-                                                            </Button>
-                                                        </Modal.Footer>
-                                                    </Modal>
                                                 </div>
                                             </div>
                                         </div>
@@ -123,7 +125,6 @@ export default function AllTasks() {
                         ))
                     }
                 </div>
-                <ToastContainer />
             </Container>
         </>
     )

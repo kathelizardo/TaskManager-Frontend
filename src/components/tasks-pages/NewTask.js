@@ -37,10 +37,10 @@ export default function NewTask() {
                     headers: { Authorization: token }
                 })
                 notify()
-                return history.push('/all-tasks')
+                return history.push('/tasks')
             }
         } catch (err) {
-            window.location.href = "/all-tasks"
+            window.location.href = "/tasks"
         }
 
     }

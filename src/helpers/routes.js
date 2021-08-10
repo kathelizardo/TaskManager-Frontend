@@ -1,14 +1,16 @@
 const routes = {
     home: '/',
+    admin: {
+        users: '/admin/users'
+    },
     about: '/about',
     login: '/login',
     register: '/register',
     loginP: '/loginp',
-    tasks: '/tasks',
+    tasks: '/newtask',
     task: '/tasks/:id',
-    admin: {
-        users: '/admin/users'
-    }
+    alltasks:'/tasks'
+   
 }
 
 export default routes

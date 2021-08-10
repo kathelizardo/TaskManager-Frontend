@@ -28,15 +28,15 @@ export default function AboutPage() {
                             <div class="row redes">
                                 <div class="redes-container">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/consueloascanio/" class="linkedin" target="_blank" rel="noopener"><i class="linkedin icon"></i></a></li>
-                                        <li><a href="https://github.com/cascanio" class="github" target="_blank" rel="noopener"><i class="github icon"></i></a></li>
-                                        <li><a href="https://www.instagram.com/consuelo.ascanio/" class="instagram" target="_blank" rel="noopener"><i class="instagram icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/consueloascanio/" class="linkedin" target="_blank" rel="noreferrer"><i class="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/cascanio" class="github" target="_blank" rel="noreferrer"><i class="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/consuelo.ascanio/" class="instagram" target="_blank" rel="noreferrer"><i class="instagram icon"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md="auto" className="column" style={{width:"25%"}}>
+                    <Col xs={4} md="auto" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/kathe.png"
@@ -48,9 +48,9 @@ export default function AboutPage() {
                             <div class="text-center row redes">
                                 <div class="redes-container">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noopener"><i class="linkedin icon"></i></a></li>
-                                        <li><a href="https://github.com/kathelizardo" class="github" target="_blank" rel="noopener"><i class="github icon"></i></a></li>
-                                        <li><a href="https://www.instagram.com/kathelizardo/" class="instagram" target="_blank" rel="noopener"><i class="instagram icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noreferrer"><i class="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/kathelizardo" class="github" target="_blank" rel="noreferrer"><i class="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/kathelizardo/" class="instagram" target="_blank" rel="noreferrer"><i class="instagram icon"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

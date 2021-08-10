@@ -311,6 +311,11 @@ Link{
   font-size: 20px;
 }
 
+.table{
+  width: 18rem;
+
+}
+
 .nav-link{
   text-decoration: none;
   color:#c48ca8
