@@ -9,8 +9,8 @@ const routes = {
     loginP: '/loginp',
     tasks: '/newtask',
     task: '/tasks/:id',
-    alltasks:'/tasks'
-   
+    alltasks:'/tasks',
+    taskspage:'/taskspage'
 }
 
 export default routes

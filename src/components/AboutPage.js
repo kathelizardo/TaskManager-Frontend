@@ -16,7 +16,7 @@ export default function AboutPage() {
             </Container>
             <Container className="mt-5 text-center about">
                 <Row className="justify-content-md-center">
-                    <Col xs={8} md="auto" className="column" style={{width:"25%"}}>
+                    <Col xs={8} md="auto" className="abinfo" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/consuelo.png"
@@ -25,12 +25,12 @@ export default function AboutPage() {
                         />
                         <p className="text-center nome">Consuelo Ascanio</p>
                         <div id="six">
-                            <div class="row redes">
-                                <div class="redes-container">
+                            <div className="row redes">
+                                <div className="redes-container">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/consueloascanio/" class="linkedin" target="_blank" rel="noreferrer"><i class="linkedin icon"></i></a></li>
-                                        <li><a href="https://github.com/cascanio" class="github" target="_blank" rel="noreferrer"><i class="github icon"></i></a></li>
-                                        <li><a href="https://www.instagram.com/consuelo.ascanio/" class="instagram" target="_blank" rel="noreferrer"><i class="instagram icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/consueloascanio/" className="linkedin" target="_blank" rel="noreferrer"><i className="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/cascanio" className="github" target="_blank" rel="noreferrer"><i className="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/consuelo.ascanio/" className="instagram" target="_blank" rel="noreferrer"><i className="instagram icon"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -45,12 +45,12 @@ export default function AboutPage() {
                         />
                         <p className="text-center nome">Katherine Lizardo</p>
                         <div id="six">
-                            <div class="text-center row redes">
-                                <div class="redes-container">
+                            <div className="text-center row redes">
+                                <div className="redes-container">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noreferrer"><i class="linkedin icon"></i></a></li>
-                                        <li><a href="https://github.com/kathelizardo" class="github" target="_blank" rel="noreferrer"><i class="github icon"></i></a></li>
-                                        <li><a href="https://www.instagram.com/kathelizardo/" class="instagram" target="_blank" rel="noreferrer"><i class="instagram icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noreferrer"><i className="linkedin icon"></i></a></li>
+                                        <li><a href="https://github.com/kathelizardo" className="github" target="_blank" rel="noreferrer"><i className="github icon"></i></a></li>
+                                        <li><a href="https://www.instagram.com/kathelizardo/" className="instagram" target="_blank" rel="noreferrer"><i className="instagram icon"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

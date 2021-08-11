@@ -28,7 +28,7 @@ export default function RegisterPage() {
         } catch (err) {
             err.response.data.msg && setErr(err.response.data.msg)
         }
-        
+        window.location.href = '/login'
     }
    
     return (

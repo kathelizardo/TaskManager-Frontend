@@ -57,7 +57,7 @@ export default function NewTask() {
                 <div className="card-body">
                     <div className="mb-3">
                         <label className="form-label">
-                            <i className="pencil alternate icon"></i>   Title</label>
+                            <i className="pencil alternate icon"></i>{' '}Title</label>
                         <input
                             type="text"
                             name="title"
@@ -69,7 +69,7 @@ export default function NewTask() {
                     </div>
                     <div className="mb-3">
                         <label className="form-label">
-                            <i className="info icon"></i>   Description</label>
+                            <i className="info icon"></i>{' '}Description</label>
                         <textarea 
                             name="description"
                             className="form-control"

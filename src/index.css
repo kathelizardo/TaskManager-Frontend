@@ -7,14 +7,23 @@ body{
 /* NavBar */
 
 /*Home Page*/
-.welcome{
+.hello{
   font-family: 'Georama', sans-serif;
   background: linear-gradient(to right, #D3CCE3 0%, #603 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5rem;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0px 20px 0px;
+}
+
+.welcome{
+  font-family: 'Georama', sans-serif;
+  background: linear-gradient(to right, #883d5a 0%, #603 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
 }
 
 .homeimg{
@@ -30,7 +39,7 @@ body{
 .slide{
   color: #603;
   padding: 10px 0px 20px 0px;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: 'Georama', sans-serif;
 }
 
@@ -77,23 +86,32 @@ body{
   padding: 20px;
  }
  .boton{
-   padding-top: 60px;
+   font-size: 20px;
+   padding: 5px;
  }
- .boton:hover {
-   transform: translateY(-5px) scale(1.005) translateZ(0);
-   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-    0 24px 46px var(--box-shadow-color);}
+
 
 
 /*Home Page Responsive */
 @media screen and (max-device-width : 768px) { 
+  .hello{
+    font-size: 2rem;
+    padding: 100px 0px 10px 0px;
+  }
+
   .welcome{
-    font-size: 2.5rem;
-    padding: 100px 0px 40px 0px;
+    font-size: 1.6rem;
   }
 
   .homeimg{
     width:15rem;
+  }
+  .boton{
+    font-size: 0.9rem;
+    padding: 2px;
+  }
+  .get{
+    margin-left: 120px;
   }
 
   .slide{
@@ -144,9 +162,7 @@ body{
     text-decoration: none;
     padding: 10px;
    }
-   .boton{
-     padding: 40px 0px 40px 80px;
-   }
+  
   
 }
 
@@ -154,8 +170,6 @@ body{
 .logo{
   width: 20%;
 }
-
-
 .welcome2{
   font-family: 'Georama', sans-serif;
   color: #603;
@@ -239,6 +253,10 @@ body{
   .about{
     margin-left: 40px ;
   }
+
+  .abinfo{
+    margin-left: 70px;
+  }
   .redes-container ul li{
     width: 30px;
     height: 30px;
@@ -295,8 +313,12 @@ body{
 }
 
 .TopTasks{
-  padding-top: 10px;
-
+  padding-top: 1px;
+}
+.header{
+  font-size: 10px;
+  color: #917984;
+  font-family: 'Georama', sans-serif;
 }
 
 Link{
@@ -334,7 +356,7 @@ Link{
 
 
 .Title {
-  color: #917984;
+  color: #D3CCE3;
   padding: 10px 0px 10px 30px;
 }
 
@@ -344,7 +366,7 @@ Link{
 
 label{
   font-weight: bold;
-  color:#917984
+  color:#D3CCE3
 }
 
 .TopTasks{
@@ -419,7 +441,17 @@ label{
     padding: 10px 0px 10px 30px;
   }
   
-  
-  
  
 }
+
+
+/* Login*/
+.titulosL{
+  font-family: 'Georama', sans-serif;
+  background: linear-gradient(to right, #993d5c 0%, #603 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
+}
+

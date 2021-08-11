@@ -6,23 +6,23 @@ import routes from '../helpers/routes'
 
 
 export default function LoginPage({ setIsLogin }) {
-    const [user, setUser] = useState({ name: '', email: '', password: '' })
+    const [user, setUser] = useState({email: '', password: '' })
     const [err, setErr] = useState('')
 
-    const onChangeInput = e => {
+    const onChange = e => {
         const { name, value } = e.target;
         setUser({ ...user, [name]: value })
         setErr('')
     }
 
-    const loginSubmit = async e => {
+    const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('http://localhost:4000/api/users/login', {
+            const res = await axios.post('http://localhost:4000/api/users/login',{
                 email: user.email,
                 password: user.password
             })
-            setUser({ name: '', email: '', password: '' })
+            setUser({email: '', password: ''})
             localStorage.setItem('tokenStore', res.data.token)
             setIsLogin(true)
         } catch (err) {
@@ -30,11 +30,10 @@ export default function LoginPage({ setIsLogin }) {
         }
     }
 
-
     return (
         <>
             <Container className="mt-5 ">
-                <h1 className="welcome2">First ... login or register:</h1>
+                <h1 className="titulosL">First ... login or register:</h1>
             </Container>
             <Container className="mt-5">
                 <Container className="ui placeholder segment">
@@ -50,7 +49,7 @@ export default function LoginPage({ setIsLogin }) {
                                                 name="email" id="login-email"
                                                 placeholder="example@email.com"
                                                 required value={user.email}
-                                                onChange={onChangeInput} 
+                                                onChange={onChange} 
                                             />
                                                 <i className="at icon"></i>
                                         </div>
@@ -67,7 +66,7 @@ export default function LoginPage({ setIsLogin }) {
                                                 required 
                                                 value={user.password}
                                                 autoComplete="true"
-                                                onChange={onChangeInput} 
+                                                onChange={onChange} 
                                             />
                                                 <i className="lock icon"></i>
                                         </div>

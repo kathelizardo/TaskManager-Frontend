@@ -1,20 +1,18 @@
 import React from 'react'
-import Header from './tasks-pages/Header'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Header from './tasks-pages/Header'
 import NewTask from './tasks-pages/NewTask'
 import EditTask from './tasks-pages/EditTask'
 import AllTasks from './tasks-pages/AllTasks'
-import Count from './tasks-pages/Count'
 
 export default function TasksPage({setIsLogin}) {
     return (
         <Router>
             <Header setIsLogin={setIsLogin} />
-                <Route path="/" exact component={AllTasks}  />
-                <Route path="/tasks" exact component={AllTasks}  />
-                <Route path="/newtask" exact component={NewTask}  />
-                <Route path="/tasks/:id" exact component={EditTask} />
-                <Route path="/tasks/count" component={Count} />
+                <Route exact path="/" component={AllTasks}  />
+                <Route exact path="/tasks" component={AllTasks}  />
+                <Route exact path="/newtask" component={NewTask}  />
+                <Route exact path="/tasks/:id" component={EditTask} />
         </Router>
     )
 }

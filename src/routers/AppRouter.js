@@ -11,6 +11,7 @@ import AppLogin from "../components/AppLogin"
 import RegisterPage from "../components/RegisterPage"
 
 
+
 export default function AppRouter() {
     return (
         <Switch>
@@ -19,8 +20,9 @@ export default function AppRouter() {
             <Route exact path={routes.loginP} component={AppLogin}/>
             <Route exact path={routes.login} component={LoginPage}/>
             <Route exact path={routes.register} component={RegisterPage}/>
-            <Route exact path={routes.tasks} component={TasksPage}/>
+            <Route exact path={routes.taskspage} component={TasksPage}/>
             <Route exact path={routes.admin.users} component={UsersPage}/>
+            <Route exact path={routes.login} component={LoginPage}/>
             <Route path="*" component={NotFoundPage}/>
     </Switch>
     )

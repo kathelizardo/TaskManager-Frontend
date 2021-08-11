@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Container, Button } from "react-bootstrap"
+import { Container, Button, Row, Col } from "react-bootstrap"
+import { Link } from 'react-router-dom'
 
 export default function UsersPage() {
     const [user, setUser] = useState([])
@@ -38,10 +39,24 @@ export default function UsersPage() {
             getUsers(token)
         window.location.href = '/admin/users'
     }
-    
+
     
     return (
         <>
+            <Container>
+                <Row>
+                <Col xs lg="2">
+                    <div className="ui middle aligned animated list" style={{paddingTop:"40px"}}>
+                            <div className="item">
+                                <Link to="/loginp"
+                                    style={{ color: "#603", textDecoration: "none" }}>
+                                    <i className="arrow circle left icon"></i> Back
+                                </Link>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
             <Container className="mt-5 ">
                 <Container>
                     <h1 className="welcome2" style={{ paddingBottom: "10px" }}>All Users:</h1>
