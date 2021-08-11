@@ -42,7 +42,7 @@ export default function NewTask() {
         } catch (err) {
             window.location.href = "/tasks"
         }
-
+        
     }
 
     const notify = () => toast("Task Saved", { position: toast.POSITION.TOP_CENTER })
