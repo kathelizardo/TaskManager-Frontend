@@ -1,11 +1,9 @@
-# Task Manager-Frontend
+FRONTEND do Projeto Final do curso FULLSTACK da TOTI Diversidade - Turma 8
 
-Part II of Toti's Final Project
+* Tema do projeto: Aplicativo de administração de tarefas com inicio de sessão de usuários.
 
-* Tema do projeto: Aplicativo de administração de tarefas com registro de usuários
-
-  - CRUD para TASK MANAGER com funcionalidade de atribuir usuarios para cada tarefa.
-  - Para a funcionalidade de usuários está a opção de criar, listar e apagar usuarios. 
+  - CRUD para TASK MANAGER
+  - Para a funcionalidade de usuários está a opção de criar, listar e apagar usuarios. Essa funcionalidade faz com que cada usuário consiga controlar suas próprias tarefas
 
 # Primeiros passos para Criar aplicativo React
 
@@ -35,6 +33,15 @@ $ npm install (dependência)
     "react-scripts": "4.0.3", - conjunto de scripts do pacote inicial create-react-app
     "react-toastify": "^7.0.4", - criar notificações personalizadas
     "timeago.js": "^4.0.2", - é uma biblioteca simples usada para formatar datetime com a instrução *** time ago. por exemplo: '3 horas atrás'.
+    
+# Devs
+
+* Katherine Lizardo - Algoritmo, modelo dos dados, backend, frontend, 
+* Consuelo Ascanio - Algoritmo, modelo dos dados, backend e documentação
+
+# Tecnologias
+![image](https://user-images.githubusercontent.com/80930426/128617615-34ec8f92-e949-46db-bae1-dc79ae2d7276.png)
+
     
 # Repositorio Backend
 https://github.com/kathelizardo/TaskManager-Backend
