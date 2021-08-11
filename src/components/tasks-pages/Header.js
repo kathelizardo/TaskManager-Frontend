@@ -12,7 +12,7 @@ function Header({ setIsLogin }) {
 
     return (
         <>
-            <Container >
+            <Container className="headertop">
                 <Row>
                     <Col>
                     <h3 className="welcome">Work Space</h3>

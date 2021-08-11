@@ -16,7 +16,7 @@ export default function AboutPage() {
             </Container>
             <Container className="mt-5 text-center about">
                 <Row className="justify-content-md-center">
-                    <Col xs={8} md="auto" className="abinfo" style={{width:"25%"}}>
+                    <Col xs={8} md="auto" className="abinfo aboutimag" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/consuelo.png"
@@ -36,7 +36,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={4} md="auto" style={{width:"25%"}}>
+                    <Col xs={4} md="auto" className="aboutimag" style={{width:"25%"}}>
                         <img
                             className="ui medium circular image"
                             src="/img/kathe.png"
@@ -48,7 +48,7 @@ export default function AboutPage() {
                             <div className="text-center row redes">
                                 <div className="redes-container">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" class="linkedin" target="_blank" rel="noreferrer"><i className="linkedin icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/katherine-lizardo/" className="linkedin" target="_blank" rel="noreferrer"><i className="linkedin icon"></i></a></li>
                                         <li><a href="https://github.com/kathelizardo" className="github" target="_blank" rel="noreferrer"><i className="github icon"></i></a></li>
                                         <li><a href="https://www.instagram.com/kathelizardo/" className="instagram" target="_blank" rel="noreferrer"><i className="instagram icon"></i></a></li>
                                     </ul>

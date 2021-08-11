@@ -96,7 +96,7 @@ body{
 @media screen and (max-device-width : 768px) { 
   .hello{
     font-size: 2rem;
-    padding: 100px 0px 10px 0px;
+    padding: 150px 0px 10px 0px;
   }
 
   .welcome{
@@ -245,6 +245,10 @@ body{
   background-color: var(--github);
 }
 
+.aboutimag{
+  width:25% ;
+}
+
 /*About Page Responsive */
 @media screen and (max-device-width : 768px) {
   .logo{
@@ -253,7 +257,9 @@ body{
   .about{
     margin-left: 40px ;
   }
-
+  .aboutimag{
+    width:50% ;
+  }
   .abinfo{
     margin-left: 70px;
   }
@@ -316,7 +322,7 @@ body{
   padding-top: 1px;
 }
 .header{
-  font-size: 10px;
+  font-size: 15px;
   color: #917984;
   font-family: 'Georama', sans-serif;
 }
@@ -378,6 +384,7 @@ label{
 .button:hover {filter: opacity(.5);}
 
 .cardT {
+  width: 300px;
   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
   transition: all 0.3s ease-out;
   text-decoration: none;
@@ -432,15 +439,26 @@ label{
   .geral{
     color: #603;
     font-size: 20px;
-  }
-  
-  
+  } 
   
   .Title {
     color: #917984;
     padding: 10px 0px 10px 30px;
   }
-  
+
+  .cardT {
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  .headertop{
+    margin-left: 60px;
+  }
+  .header{
+    font-size: 10px;
+    color: #917984;
+    font-family: 'Georama', sans-serif;
+  }
  
 }
 
@@ -455,3 +473,8 @@ label{
   font-size: 2.3rem;
 }
 
+@media screen and (max-device-width : 768px) {
+  .titulosL{
+    font-size: 1.8rem;
+  }
+}

@@ -59,7 +59,7 @@ export default function UsersPage() {
             </Container>
             <Container className="mt-5 ">
                 <Container>
-                    <h1 className="welcome2" style={{ paddingBottom: "10px" }}>All Users:</h1>
+                    <h1 className="titulosL" style={{ paddingBottom: "10px" }}>All Users:</h1>
                     <p>{err}</p>
                 </Container>
                 <Container style={{ padding: "20px" }}>
