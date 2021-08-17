@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Container, Col, Row } from "react-bootstrap"
-import { Link } from 'react-router-dom'
-import routes from '../helpers/routes'
+
 
 
 export default function LoginPage({ setIsLogin }) {
@@ -34,17 +33,17 @@ export default function LoginPage({ setIsLogin }) {
 
     return (
         <>
-            <Container className="mt-5 ">
-                <h1 className="titulosL">First ... login or register:</h1>
+            <Container className="mt-5">
+                <h1 className="titulosL">First ... log in:</h1>
             </Container>
             <Container className="mt-5">
-                <Container className="ui placeholder segment">
-                    <div className="ui two column grid">
-                        <div className="column">
+                <Container className="ui compact segment" style={{width:"350px"}}>
+                    <div className="ui">
+                        <div className="column loginC">
                             <form onSubmit={loginSubmit} >
                                 <div className="ui form">
                                     <div className="field">
-                                        <label>Email</label>
+                                        <label style={{color:"#603"}}>Email</label>
                                         <div className="ui left icon input">
                                             <input 
                                                 type="email"
@@ -58,7 +57,7 @@ export default function LoginPage({ setIsLogin }) {
                                     </div>
 
                                     <div className="field">
-                                        <label>Password</label>
+                                        <label style={{color:"#603"}}>Password</label>
                                         <div className="ui left icon input">
                                             <input 
                                                 type="password" 
@@ -73,7 +72,7 @@ export default function LoginPage({ setIsLogin }) {
                                                 <i className="lock icon"></i>
                                         </div>
                                     </div>
-
+                                    <Container className="text-center">
                                     <button 
                                         type="submit" 
                                         className="ui submit button"
@@ -82,11 +81,11 @@ export default function LoginPage({ setIsLogin }) {
                                         <i className="sign-in icon"></i>
                                         Login
                                     </button>
-
+                                    </Container>
                                 </div>
                             </form>
                         </div>
-                        <div className="middle aligned column">
+                        {/* <div className="middle aligned column">
                             <div className="ui small button" style={{ backgroundColor: "#603" }}>
                                 <Link to={routes.register} 
                                     style={{ color: "whitesmoke", textDecoration: "none" }}>
@@ -94,13 +93,12 @@ export default function LoginPage({ setIsLogin }) {
                                        Register
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="ui vertical divider">
+                    {/* <div className="ui vertical divider">
                         <i className="angle left icon geral"></i>
                         <i className="angle right icon geral"></i>
-                    </div>
-
+                    </div> */}
                 </Container>
             </Container>
 
