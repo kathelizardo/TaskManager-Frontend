@@ -17,7 +17,7 @@ export default function LoginPage({ setIsLogin }) {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('http://localhost:4000/api/users/login',{
+            const res = await axios.post('https://taksmanager.herokuapp.com/api/users/login',{
                 email: user.email,
                 password: user.password
             })

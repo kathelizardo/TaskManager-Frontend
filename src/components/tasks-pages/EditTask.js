@@ -16,7 +16,7 @@ export default function EditTask({ match }) {
         const getTask = async () => {
             const token = localStorage.getItem('tokenStore')
             if (match.params.id) {
-                const res = await axios.get(`/api/tasks/${match.params.id}`, {
+                const res = await axios.get(`https://taksmanager.herokuapp.com/api/tasks/${match.params.id}`, {
                     headers: { Authorization: token }
                 })
                 setTask({
@@ -46,7 +46,7 @@ export default function EditTask({ match }) {
                     title, description, date, status
                 }
 
-                await axios.put(`/api/tasks/${id}`, newTask, {
+                await axios.put(`https://taksmanager.herokuapp.com/api/tasks/${id}`, newTask, {
                     headers: { Authorization: token }
                 })
                 return history.push('/')

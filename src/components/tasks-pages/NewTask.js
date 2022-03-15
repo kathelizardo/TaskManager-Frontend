@@ -33,7 +33,7 @@ export default function NewTask() {
                     date
                 }
 
-                await axios.post('/api/tasks', newTask, {
+                await axios.post('https://taksmanager.herokuapp.com/api/tasks', newTask, {
                     headers: { Authorization: token }
                 })
                 notify()

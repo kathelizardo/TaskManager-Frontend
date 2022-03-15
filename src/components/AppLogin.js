@@ -11,7 +11,7 @@ export default function AppLogin() {
     const checkLogin = async () =>{
       const token = localStorage.getItem('tokenStore')
       if(token){
-        const verified = await axios.get('http://localhost:4000/api/users/verify',{
+        const verified = await axios.get('https://taksmanager.herokuapp.com/api/users/verify',{
           headers:{ Authorization: token}
         })
         console.log(verified)

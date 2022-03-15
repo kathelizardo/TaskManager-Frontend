@@ -10,7 +10,7 @@ export default function AllTasks() {
     const [token, setToken] = useState('')
 
     const getTasks = async (token) => {
-        const res = await axios.get('api/tasks', {
+        const res = await axios.get('https://taksmanager.herokuapp.com/api/tasks', {
             headers: { Authorization: token }
         })
         setTasks(res.data)
@@ -37,7 +37,7 @@ export default function AllTasks() {
             if (result.isConfirmed) {
                 try {
                     if (token) {
-                        axios.delete(`http://localhost:4000/api/tasks/${id}`, {
+                        axios.delete(`https://taksmanager.herokuapp.com/api/tasks/${id}`, {
                             headers: { Authorization: token }
                         })
                         getTasks(token)
