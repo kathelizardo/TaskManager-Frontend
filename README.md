@@ -5,6 +5,17 @@ FRONTEND do Projeto Final do curso FULLSTACK da TOTI Diversidade - Turma 8
   - CRUD para TASK MANAGER
   - Para a funcionalidade de usuários está a opção de criar, listar e apagar usuarios. Essa funcionalidade faz com que cada usuário consiga controlar suas próprias tarefas
 
+
+# Important / Importante 
+
+If you want to test the site, please send a message to our linkedin to give you access. (It's on the site in "About Us" or you can also find it in my profile)
+Thanks for your interest.
+
+Caso queira testar o site, por favor envie uma mensagem para o nosso linkedin para lhe dar acesso. (Está no site em "About Us" ou você também pode encontrá-lo no meu perfil)
+Obrigada pelo seu interesse.
+
+** Caso você queira clonar o repositório**
+
 # Primeiros passos para Criar aplicativo React
 
 Este projeto foi inicializado com [Create React App] (https://github.com/facebook/create-react-app).
@@ -42,13 +53,7 @@ $ npm install (dependência)
 # Tecnologias
 ![image](https://user-images.githubusercontent.com/80930426/128617615-34ec8f92-e949-46db-bae1-dc79ae2d7276.png)
 
-# Importante / Immportant
 
-If you want to test the site, please send a message to our linkedin to give you access. (It's on the site in "About Us" or you can also find it in my profile)
-Thanks for your interest.
-
-Caso queira testar o site, por favor envie uma mensagem para o nosso linkedin para lhe dar acesso. (Está no site em "About Us" ou você também pode encontrá-lo no meu perfil)
-Obrigada pelo seu interesse.
 
     
 # Repositorio Backend
