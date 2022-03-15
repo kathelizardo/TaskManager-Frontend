@@ -42,6 +42,14 @@ $ npm install (dependência)
 # Tecnologias
 ![image](https://user-images.githubusercontent.com/80930426/128617615-34ec8f92-e949-46db-bae1-dc79ae2d7276.png)
 
+# Importante / Immportant
+
+If you want to test the site, please send a message to our linkedin to give you access. (It's on the site in "About Us" or you can also find it in my profile)
+Thanks for your interest.
+
+Caso queira testar o site, por favor envie uma mensagem para o nosso linkedin para lhe dar acesso. (Está no site em "About Us" ou você também pode encontrá-lo no meu perfil)
+Obrigada pelo seu interesse.
+
     
 # Repositorio Backend
 https://github.com/kathelizardo/TaskManager-Backend
